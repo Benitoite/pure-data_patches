@@ -1,4 +1,4 @@
-#N canvas 628 205 951 556 10;
+#N canvas 628 205 533 601 10;
 #X obj 212 170 hidio;
 #X msg 190 83 open 0x046d 0xc216;
 #X msg 363 80 close;
@@ -125,16 +125,17 @@ the key pressed.;
 #X obj 237 491 *~ 0.5;
 #X floatatom 15 412 5 0 0 0 - - -;
 #X obj 399 237 vsl 15 256 0 256 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 13248 1;
+-1 -1 0 1;
 #X obj 427 238 vsl 15 256 0 256 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12850 1;
+-1 -1 0 1;
 #X obj 451 238 vsl 15 256 0 256 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12451 1;
+-1 -1 0 1;
 #X obj 477 239 vsl 15 256 0 256 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12451 1;
+-1 -1 0 1;
 #X text 100 83 logitech F310;
 #X text 125 105 Sony PS3;
 #X msg 192 105 open 0x054c 0x0268;
+#X text 25 8 [HIDIO]synth Richard E. Barber 2019;
 #X connect 0 0 8 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
