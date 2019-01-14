@@ -63,7 +63,7 @@
 #X obj 1075 333 delay 1000;
 #X obj 682 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#N canvas 438 192 1161 773 win2 0;
+#N canvas 438 192 1161 773 win2 1;
 #X obj 648 682 Gem;
 #X obj 598 361 rotateXYZ;
 #X obj 570 304 colorRGB;
@@ -126,7 +126,9 @@
 #X msg 228 141 seed 1212;
 #X msg 154 126 seed 9876;
 #X obj 546 96 gemhead 75;
-#X obj 652 606 cube;
+#X obj 658 656 cube;
+#X obj 648 604 pix_image steel1.jpg;
+#X obj 665 630 pix_texture;
 #X connect 1 0 39 0;
 #X connect 2 0 1 0;
 #X connect 3 0 24 0;
@@ -199,7 +201,7 @@
 #X connect 47 0 44 0;
 #X connect 48 0 45 0;
 #X connect 49 0 20 0;
-#X connect 50 0 61 0;
+#X connect 50 0 62 0;
 #X connect 51 0 30 0;
 #X connect 52 0 32 0;
 #X connect 53 0 34 0;
@@ -213,6 +215,8 @@
 #X connect 60 0 38 0;
 #X connect 60 0 29 0;
 #X connect 61 0 0 0;
+#X connect 62 0 63 0;
+#X connect 63 0 61 0;
 #X restore 893 521 pd win2;
 #N canvas 638 248 1146 609 win3 0;
 #X obj 648 682 Gem;
@@ -277,7 +281,9 @@
 #X msg 992 253 seed 555;
 #X msg 1058 252 seed 2666;
 #X obj 546 96 gemhead 100;
-#X obj 652 607 cube;
+#X obj 650 661 cube;
+#X obj 636 604 pix_image steel1.jpg;
+#X obj 653 630 pix_texture;
 #X connect 1 0 39 0;
 #X connect 2 0 1 0;
 #X connect 3 0 24 0;
@@ -350,7 +356,7 @@
 #X connect 47 0 44 0;
 #X connect 48 0 45 0;
 #X connect 49 0 20 0;
-#X connect 50 0 61 0;
+#X connect 50 0 62 0;
 #X connect 51 0 4 0;
 #X connect 52 0 3 0;
 #X connect 53 0 5 0;
@@ -364,12 +370,16 @@
 #X connect 60 0 38 0;
 #X connect 60 0 29 0;
 #X connect 61 0 0 0;
+#X connect 62 0 63 0;
+#X connect 63 0 61 0;
 #X restore 905 568 pd win3;
 #X obj 1145 512 gemwin 40;
 #X obj 546 96 gemhead 50;
-#X obj 652 606 cube;
+#X obj 653 651 cube;
 #X msg 1015 462 reset \, dimen 500 500 \, create \, 1;
 #X obj 638 575 scale 1;
+#X obj 640 600 pix_image steel1.jpg;
+#X obj 657 626 pix_texture;
 #X connect 1 0 65 0;
 #X connect 2 0 51 0;
 #X connect 3 0 2 0;
@@ -462,4 +472,6 @@
 #X connect 66 0 32 0;
 #X connect 67 0 0 0;
 #X connect 68 0 65 0;
-#X connect 69 0 67 0;
+#X connect 69 0 70 0;
+#X connect 70 0 71 0;
+#X connect 71 0 67 0;
