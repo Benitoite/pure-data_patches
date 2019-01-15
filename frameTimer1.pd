@@ -1,0 +1,15 @@
+#N canvas 503 255 410 203 10;
+#X obj 147 126 Gem;
+#X msg 193 102 destroy;
+#X msg 155 79 reset \, dimen 500 500 \, create \, 1;
+#X obj 80 125 print;
+#X obj 80 100 realtime;
+#X obj 80 75 t b b;
+#X obj 80 49 gemhead;
+#X obj 193 125 gemwin;
+#X connect 1 0 7 0;
+#X connect 2 0 7 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 5 1 4 1;
+#X connect 6 0 5 0;
