@@ -1,4 +1,4 @@
-#N canvas 270 70 1374 942 10;
+#N canvas 147 54 1333 947 10;
 #X obj 110 125 hidio;
 #X floatatom 335 164 5 0 0 1 value - -;
 #X symbolatom 110 179 15 0 0 1 event_code - -;
@@ -87,7 +87,7 @@
 #X obj 434 550 r hatup;
 #X msg 435 593 74, f 4;
 #X msg 364 590 65;
-#X msg 512 771 62, f 4;
+#X msg 512 771 74, f 4;
 #X msg 504 681 set \$1;
 #X obj 362 571 sel 1;
 #X obj 434 573 sel 1;
@@ -131,7 +131,7 @@
 #X floatatom 996 241 5 0 0 0 - - -;
 #X obj 873 179 expr (($i1==1) && ($i2==1)), f 13;
 #X obj 968 187 expr (($i1==1) && ($i2==1)), f 13;
-#X floatatom 722 343 5 0 0 0 - - -;
+#X floatatom 814 361 5 0 0 0 - - -;
 #X floatatom 503 352 5 0 0 0 - - -;
 #X obj 540 243 s b;
 #X floatatom 546 221 5 0 0 0 - - -;
@@ -180,6 +180,9 @@
 #X text 503 899 FREQUENCY CALCULATOR;
 #X text 808 575 PITCH MODIFIERS;
 #X text 11 241 INTERFACE;
+#X text 1059 748 Ocarina;
+#X text 1072 761 of;
+#X text 1066 776 Time;
 #X connect 0 0 3 0;
 #X connect 2 0 18 0;
 #X connect 3 1 2 0;
